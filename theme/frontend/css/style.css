@@ -637,6 +637,10 @@ img {
 .update>title {
     font-weight: bold;
 }
+.clickto {
+    display: block;
+    transition: 1s;
+    transform: translateX(0%) !important;}
 
 .update>.ct>h3>a {
     text-transform: uppercase;
