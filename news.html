@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="theme/frontend/css/style.css">
     <link rel="stylesheet" href="theme/frontend/css/reset.css">
     <link rel="stylesheet" href="theme/frontend/css/news.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="theme/frontend/images/icon/favicon-16x16.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
     <script src="theme/frontend/js/index.js"></script>
@@ -21,13 +22,13 @@
                 <img src="theme/frontend/images/logo1.png" alt="">
             </a>
         </div>
-        <div class="navbar">
+        <div class="nav-bar">
             <div class="container">
                 <nav class="main-nav">
                     <ul>
                         <li><a class="smooth" href="#" title="">Massagebay</a>
                             <ul>
-                                <li><a href="#" class="smooth" title="">Giới thiệu</a></li>
+                                <li><a href="" class="smooth" title="">Giới thiệu</a></li>
                                 <li><a href="#" class="smooth" title="">Điều khoản sử dụng</a>
                                     <ul>
                                         <li><a href="#" title="">Giới thiệu</a></li>
@@ -47,7 +48,19 @@
                             </ul>
                         </li>
                         <li><a href="#" title="">DIỄN ĐÀN</a></li>
-                        <li><a class="smooth" href="#" title="">Tin tức</a></li>
+                        <li><a class="smooth" href="" title="">Tin tức</a>
+                            <ul>
+                                <li><a href="news.html">Tin mới nhất</a>
+                                <ul>
+                                    <li><a href="detail.html">Chi tiết</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="news.html">Tin Công nghệ</a></li>
+                                <li><a href="news.html">Tin trong nước</a></li>
+                            </ul>
+                        </li>
+
+
                         <li><a class="smooth" href="#" title="">Coupon</a></li>
                         <li><a class="smooth" href="#" title="">Liên hệ</a></li>
                     </ul>
@@ -58,7 +71,7 @@
             <nav class="main-nav-m">
                 <button class="menu-btn" type="button"><i class="fas fa-bars"></i></button>
                 <ul>
-                    <li><a class="smooth" href="#" title="">Massagebay</a>
+                    <li><a class="smooth" href="index.html" title="">Massagebay</a>
                         <ul>
                             <li><a href="" class="smooth" title="">Giới thiệu</a></li>
                             <li><a href="" class="smooth" title="">Điều khoản sử dụng</a>
@@ -81,7 +94,7 @@
                     </li>
                     <li><a href="#" title="">DIỄN ĐÀN</a></li>
                     <li><a class="smooth" href="#" title="">Tin tức</a></li>
-                    <li><a class="smooth" href="#" title="">Coupon</a></li>
+                    <li><a class="smooth" href="" title="">Coupon</a></li>
                     <li><a class="smooth" href="#" title="">Liên hệ</a></li>
                 </ul>
             </nav>
@@ -98,7 +111,7 @@
 
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 content__padding">
                     <div class="content_bg">
                         <a href="">
                             <img src="theme/frontend/images/info_img.png" alt="">
@@ -116,136 +129,229 @@
                         </div>
                     </div>
 
-
                     <h2 class="heading_news">Tin tức mới nhất</h2>
-                    <div class="content_news_flex">
-                        <div class="img-news">
-                            <img src="theme/frontend/images/home_sp01.png" alt="">
-                        </div>
+                    <div class="container container_row">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 col-sm-12 ">
+                                <div class="img-news">
+                                    <img src="theme/frontend/images/home_sp01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-sm-12 col-sm-12">
+                                <p class="heading_text">TRÀNG AN LUXURY</p>
+                                <div class="rate_area">
+                                    <span class="rate_star">
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                    </span>
+                                    <span class="area">
+                                        Bình Dương
+                                    </span>
+                                </div>
+                                <p class="text__content">
+                                    Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những
+                                    khách sạn
+                                    mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
+                                </p>
+                                <div class="date__time">
+                                    <span class="clock"><i class="far fa-clock"></i></span>
+                                    <span class="date_news">00:08 | 26/08/2020</span>
+                                </div>
+                            </div>
 
-                        <div class="text-news">
-                            <p class="heading_text">TRÀNG AN LUXURY</p>
-                            <div class="rate_area">
-                                <span class="rate_star">
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                </span>
-                                <span class="area">
-                                    Bình Dương
-                                </span>
-                            </div>
-                            <p class="text__content">
-                                Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn
-                                mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
-                            </p>
-                            <div class="date__time">
-                                <span class="clock"><i class="far fa-clock"></i></span>
-                                <span class="date_news">00:08 | 26/08/2020</span>
-                            </div>
-                            
                         </div>
                     </div>
-                    <div class="content_news_flex">
-                        <div class="img-news">
-                            <img src="theme/frontend/images/home_sp02.png" alt="">
-                        </div>
 
-                        <div class="text-news">
-                            <p class="heading_text">TRÀNG AN LUXURY</p>
-                            <div class="rate_area">
-                                <span class="rate_star">
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                </span>
-                                <span class="area">
-                                    Bình Dương
-                                </span>
+                    <div class="container container_row">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 col-sm-12">
+                                <div class="img-news">
+                                    <img src="theme/frontend/images/home_sp02.png" alt="">
+                                </div>
                             </div>
-                            <p class="text__content">
-                                Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn
-                                mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
-                            </p>
-                            <div class="date__time">
-                                <span class="clock"><i class="far fa-clock"></i></span>
-                                <span class="date_news">00:08 | 26/08/2020</span>
+                            <div class="col-xl-7 col-lg-7 col-sm-12 col-sm-12">
+                                <p class="heading_text">TRÀNG AN LUXURY</p>
+                                <div class="rate_area">
+                                    <span class="rate_star">
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                    </span>
+                                    <span class="area">
+                                        Bình Dương
+                                    </span>
+                                </div>
+                                <p class="text__content">
+                                    Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những
+                                    khách sạn
+                                    mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
+                                </p>
+                                <div class="date__time">
+                                    <span class="clock"><i class="far fa-clock"></i></span>
+                                    <span class="date_news">00:08 | 26/08/2020</span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="content_news_flex">
-                        <div class="img-news">
-                            <img src="theme/frontend/images/home_sp03.png" alt="">
-                        </div>
 
-                        <div class="text-news">
-                            <p class="heading_text">TRÀNG AN LUXURY</p>
-                            <div class="rate_area">
-                                <span class="rate_star">
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                </span>
-                                <span class="area">
-                                    Bình Dương
-                                </span>
+                    <div class="container container_row">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 col-sm-12">
+                                <div class="img-news">
+                                    <img src="theme/frontend/images/home_sp04.png" alt="">
+                                </div>
                             </div>
-                            <p class="text__content">
-                                Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn
-                                mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
-                            </p>
-                            <div class="date__time">
-                                <span class="clock"><i class="far fa-clock"></i></span>
-                                <span class="date_news">00:08 | 26/08/2020</span>
+                            <div class="col-xl-7 col-lg-7 col-sm-12 col-sm-12">
+                                <p class="heading_text">TRÀNG AN LUXURY</p>
+                                <div class="rate_area">
+                                    <span class="rate_star">
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                    </span>
+                                    <span class="area">
+                                        Bình Dương
+                                    </span>
+                                </div>
+                                <p class="text__content">
+                                    Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những
+                                    khách sạn
+                                    mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
+                                </p>
+                                <div class="date__time">
+                                    <span class="clock"><i class="far fa-clock"></i></span>
+                                    <span class="date_news">00:08 | 26/08/2020</span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="content_news_flex">
-                        <div class="img-news">
-                            <img src="theme/frontend/images/home_sp04.png" alt="">
-                        </div>
 
-                        <div class="text-news">
-                            <p class="heading_text">TRÀNG AN LUXURY</p>
-                            <div class="rate_area">
-                                <span class="rate_star">
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                    <i class="icon-star icon-large icon-c"></i>
-                                </span>
-                                <span class="area">
-                                    Bình Dương
-                                </span>
+
+
+                    <div class="container container_row">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 col-sm-12">
+                                <div class="img-news">
+                                    <img src="theme/frontend/images/home_sp03.png" alt="">
+                                </div>
                             </div>
-                            <p class="text__content">
-                                Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những khách sạn
-                                mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
-                            </p>
-                            <div class="date__time">
-                                <span class="clock"><i class="far fa-clock"></i></span>
-                                <span class="date_news">00:08 | 26/08/2020</span>
+                            <div class="col-xl-7 col-lg-7 col-sm-12 col-sm-12">
+                                <p class="heading_text">TRÀNG AN LUXURY</p>
+                                <div class="rate_area">
+                                    <span class="rate_star">
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                    </span>
+                                    <span class="area">
+                                        Bình Dương
+                                    </span>
+                                </div>
+                                <p class="text__content">
+                                    Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những
+                                    khách sạn
+                                    mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
+                                </p>
+                                <div class="date__time">
+                                    <span class="clock"><i class="far fa-clock"></i></span>
+                                    <span class="date_news">00:08 | 26/08/2020</span>
+                                </div>
                             </div>
+
+                        </div>
+                    </div>
+                    <div class="container container_row">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 col-sm-12 ">
+                                <div class="img-news">
+                                    <img src="theme/frontend/images/home_sp06.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-sm-12 col-sm-12">
+                                <p class="heading_text">TRÀNG AN LUXURY</p>
+                                <div class="rate_area">
+                                    <span class="rate_star">
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                    </span>
+                                    <span class="area">
+                                        Bình Dương
+                                    </span>
+                                </div>
+                                <p class="text__content">
+                                    Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những
+                                    khách sạn
+                                    mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
+                                </p>
+                                <div class="date__time">
+                                    <span class="clock"><i class="far fa-clock"></i></span>
+                                    <span class="date_news">00:08 | 26/08/2020</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container container_row">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-sm-12 col-sm-12">
+                                <div class="img-news">
+                                    <img src="theme/frontend/images/home_sp01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-sm-12 col-sm-12">
+                                <p class="heading_text">TRÀNG AN LUXURY</p>
+                                <div class="rate_area">
+                                    <span class="rate_star">
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                        <i class="icon-star icon-large icon-c"></i>
+                                    </span>
+                                    <span class="area">
+                                        Bình Dương
+                                    </span>
+                                </div>
+                                <p class="text__content">
+                                    Nổi bật trên không gian làng quê yên tĩnh, TRÀNG AN LUXURY là một trong những
+                                    khách sạn
+                                    mới nhất của Nổi bật trên không gian làng quê yên tĩnh,
+                                </p>
+                                <div class="date__time">
+                                    <span class="clock"><i class="far fa-clock"></i></span>
+                                    <span class="date_news">00:08 | 26/08/2020</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                          <li class="page-item disabled"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
-                          <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#" style="background-color: #fff;"><i class="fas fa-chevron-right"></i></a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#"><i
+                                        class="fas fa-chevron-left"></i></a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#" style="background-color: #fff;"><i
+                                        class="fas fa-chevron-right"></i></a></li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
                     <div class="sb-form form_new">
@@ -288,7 +394,7 @@
                         <a href="">
                             <div class="new_item">
                                 <div class="item_img">
-                                    <img src="theme/frontend/images/home_sp04.png "  alt="">
+                                    <img src="theme/frontend/images/home_sp04.png " alt="">
                                 </div>
                                 <div class="item_text">
                                     <h3>Khu du lịch</h3>
@@ -344,7 +450,7 @@
                             <img src="theme/frontend/images/home_sp10.png" />
                         </a>
                     </div>
-    
+
 
 
                 </div>
@@ -355,7 +461,7 @@
             <div class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                             <h4 class="foot-title">Về hotel84.com</h4>
                             <ul>
                                 <li><a href="#">Trang Chủ</a></li>
@@ -368,7 +474,7 @@
                                 <li><a href="#">Liên Hệ</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                             <h4 class="foot-title">Về hotel84.com</h4>
                             <ul>
                                 <li><a href="#">Viết bài quảng cáo khách sạn</a></li>
@@ -417,6 +523,10 @@
         </div>
     </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="theme/frontend/js/index.js"></script>
 </body>
 
 </html>
