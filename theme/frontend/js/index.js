@@ -1,9 +1,8 @@
 jQuery(document).ready(function($) {
 	$('.menu-btn').click(function(){
-        
-        $('.main-bar-m').toggleClass('clickto');
-        
-		if($('.main-bar-m').hasClass('clickto'))
+		$('.main-bar-m').css('transition','1s');
+		$('.main-bar-m').toggleClass('clickme');
+		if($('.main-bar-m').hasClass('clickme'))
 		{
 			$(this).children('i').removeClass('fa-bars');
 			$(this).children('i').addClass('fa-window-close');
@@ -62,4 +61,23 @@ jQuery(document).ready(function($) {
             }
         });
 
+        var back_top = $('.back-to-top');
+
+        if(win.scrollTop() > 500 && win.width()<=991){ back_top.fadeIn(); }
+
+        back_top.click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 800 );
+            return false;
+        });
+
+        win.resize(function() {
+            if($(this).width()>991){
+                back_top.fadeOut();
+            }
+        });
+
+        win.scroll(function() {    
+            if(win.scrollTop() > 500 && win.width()<=991 ) back_top.fadeIn(); 
+            else back_top.fadeOut();
+        });
 });
