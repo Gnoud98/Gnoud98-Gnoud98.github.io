@@ -76,8 +76,18 @@ ul.breadcrumb.breadcrumb_detail{
     font-size:5px;
 }
 .comment{display:flex}
+
 @media (max-width: 768px){
     .social{
         padding-bottom: 15px;
+    }
+    .hot_news a .new_item .item_text {
+    
+    margin: 0 auto;}
+    
+}
+@media(max-width:991px){
+    .img_side_right{
+        display: none;
     }
 }
