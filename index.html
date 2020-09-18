@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
-    <link rel="stylesheet" href="theme/frontend/css/reset.css">
     <link rel="stylesheet" href="theme/frontend/css/style.css">
-
+    <link rel="stylesheet" href="theme/frontend/css/reset.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="theme/frontend/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Massage Bay</title>
 </head>
 
@@ -21,7 +22,7 @@
                 <img src="theme/frontend/images/logo1.png" alt="">
             </a>
         </div>
-        <div class="navbar">
+        <div class="nav-bar">
             <div class="container">
                 <nav class="main-nav">
                     <ul>
@@ -47,8 +48,20 @@
                             </ul>
                         </li>
                         <li><a href="#" title="">DIỄN ĐÀN</a></li>
-                        <li><a class="smooth" href="news.html" title="">Tin tức</a></li>
-                        <li><a class="smooth" href="detail.html" title="">Coupon</a></li>
+                        <li><a class="smooth" href="" title="">Tin tức</a>
+                            <ul>
+                                <li><a href="news.html">Tin mới nhất</a>
+                                <ul>
+                                    <li><a href="detail.html">Chi tiết</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="news.html">Tin Công nghệ</a></li>
+                                <li><a href="news.html">Tin trong nước</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a class="smooth" href="#" title="">Coupon</a></li>
                         <li><a class="smooth" href="#" title="">Liên hệ</a></li>
                     </ul>
                 </nav>
@@ -56,9 +69,12 @@
         </div>
         <div class="main-bar-m">
             <nav class="main-nav-m">
-                <button class   ="menu-btn" type="button"><i class="fas fa-bars"></i></button>
+                <button class="menu-btn" type="button"><i class="fas fa-bars"></i></button>
                 <ul>
-                    <li><a class="smooth" href="index.html" title="">Massagebay</a>
+                   <li><a href="">
+                       <img src="theme/frontend/images/logo.png" alt="">
+                   </a></li>
+                    <li><a class="smooth" href="index.html" title="">Massagebay </a>
                         <ul>
                             <li><a href="" class="smooth" title="">Giới thiệu</a></li>
                             <li><a href="" class="smooth" title="">Điều khoản sử dụng</a>
@@ -80,20 +96,21 @@
                         </ul>
                     </li>
                     <li><a href="#" title="">DIỄN ĐÀN</a></li>
-                    <li><a class="smooth" href="#" title="">Tin tức</a></li>
-                    <li><a class="smooth" href="" title="">Coupon</a></li>
+                    <li><a class="smooth" href="news.html" title="">Tin tức</a></li>
+                    <li><a class="smooth" href="#" title="">Coupon</a></li>
                     <li><a class="smooth" href="#" title="">Liên hệ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- Content -->
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 ">
                 <h2 class="h-title heading__title">Spa uy tín</h2>
                 <div class="h-tab group-tabs">
-                    <ul class="nav nav-tabs" id="tabs">
+                    <ul class="nav nav-tabs nav-fill" id="tabs">
                         <li class="nav-item">
                             <a class="nav-link active nav__area" data-toggle="tab" href="#mien_bac">Miền Bắc</a>
                         </li>
@@ -373,16 +390,17 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="img_side_right">
-                    <a href="#" title="">
-                        <img src="theme/frontend/images/home_sp09.png" />
-                    </a>
-                </div>
-                <div class="img_side_right">
-                    <a href="#" title="">
-                        <img src="theme/frontend/images/home_sp10.png" />
-                    </a>
+                <div class="flex-img">
+                    <div class="img_side_right">
+                        <a href="#" title="">
+                            <img src="theme/frontend/images/home_sp09.png" />
+                        </a>
+                    </div>
+                    <div class="img_side_right">
+                        <a href="#" title="">
+                            <img src="theme/frontend/images/home_sp10.png" />
+                        </a>
+                    </div>
                 </div>
                 <!-- Sản phẩm -->
 
@@ -551,11 +569,12 @@
                     </div>
         </div>
     </div>
+    
     <footer>
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <h4 class="foot-title">Về hotel84.com</h4>
                         <ul>
                             <li><a href="#">Trang Chủ</a></li>
@@ -568,7 +587,7 @@
                             <li><a href="#">Liên Hệ</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <h4 class="foot-title">Về hotel84.com</h4>
                         <ul>
                             <li><a href="#">Viết bài quảng cáo khách sạn</a></li>
@@ -616,11 +635,11 @@
             </div>
         </div>
     </footer>
-    
+      
+      
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="theme/frontend/js/index.js"></script>
 </body>
 
